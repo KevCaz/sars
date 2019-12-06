@@ -1,4 +1,3 @@
-
 #' Fit the General Dynamic Model of Island Biogeography
 #'
 #' @description Fit the general dynamic model (GDM) of island biogeography
@@ -202,8 +201,6 @@ gdm <- function(data, model = "linear", mod_sel = FALSE, AST = c(1, 2, 3)){
     class(allMods) <- "gdm"
     attr(allMods, "Type") <- "allMods"
     attr(allMods, "mod_sel") <- mod_sel
-    return(allMods)
-  } else {
-    return(fit)
-  }
+    allMods
+  } else fit
 }

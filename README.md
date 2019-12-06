@@ -1,3 +1,5 @@
+## :warning: This branch uses a SAR builder
+
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 The **'sars'** R Package <img src="man/figures/sars_logo.png" align="right" width="10%"/>
@@ -55,9 +57,9 @@ Attempting to fit all 20 sar models to the 'galapagos' (Preston 1962) data set a
 
 ``` r
 mm_galap <- sar_average(data = galap)
-#> 
-#>  Now attempting to fit the 20 SAR models: 
-#> 
+#>
+#>  Now attempting to fit the 20 SAR models:
+#>
 #> --  multi_sars --------------------------------------------------- multi-model SAR --
 #> > power    : v
 #> > powerR   : v
@@ -81,14 +83,14 @@ mm_galap <- sar_average(data = galap)
 #> > betap    : v
 #> > heleg    : v
 #> > linear   : v
-#> 
+#>
 #> Model fitting completed - all models succesfully fitted.  Now undertaking model validation checks.
 #> Additional models  will be excluded if necessary:
-#> 
+#>
 #> 4 models failed the residuals normality test and  have been excluded  from the multi SAR:
 #> Extended Power model 1, Asymptotic regression, Cumulative Weibull 4 par., Linear model
 #> 16 remaining models used to construct the multi  SAR:
-#>  Power, PowerR, Extended Power model 2, Persistence function 1, Persistence function 2, Logarithmic, Kobayashi, MMF, Monod, Negative exponential, Chapman Richards, Cumulative Weibull 3 par., Rational function, Gompertz, Beta-P cumulative, Heleg(Logistic) 
+#>  Power, PowerR, Extended Power model 2, Persistence function 1, Persistence function 2, Logarithmic, Kobayashi, MMF, Monod, Negative exponential, Chapman Richards, Cumulative Weibull 3 par., Rational function, Gompertz, Beta-P cumulative, Heleg(Logistic)
 #> -------------------------------------------------------------------------------------
 ```
 

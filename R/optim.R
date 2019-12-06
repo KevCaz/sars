@@ -234,11 +234,7 @@ grid_start_fit <- function(model, data, n, algo = "Nelder-Mead",
 
   min <- which.min(values)
 
-  if (length(min)) {
-    fit.list[[min]]
-  } else{
-    list(value = NA)
-  }
+  if (length(min)) fit.list[[min]] else list(value = NA)
 
 }#eo grid_start_fit
 
@@ -287,10 +283,8 @@ get_fit <- function(model = model, data = data, start = NULL,
 
   if (is.na(fit$value)) {
     warning("The model could not be fitted :(\n")
-    return(list(value = NA))
-  } else {
-    return(fit)
-  }
+    list(value = NA)
+  } else fit
 }#eo get_fit
 
 
