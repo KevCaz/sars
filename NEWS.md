@@ -1,5 +1,14 @@
+## Version 1.2.0
+  * bug fixes (bar plot of weight x-axis labels order was incorrect in some cases)
+  * logT argument added to lin_pow function (can choose log-transformation function)
 
-  
+## Version 1.1.2
+  * bug fixes
+  * additional tests added
+  * sar_pred() function added for SAR extrapolation
+  * negative fitted value check (fit$neg_check) returned for each individual model fit
+  * knitr error correction (for CRAN)
+
 ## Version 1.1.1
  * added vignette
  * bug fixes
@@ -12,9 +21,10 @@
   * unit testing added
   * functions added to bring up a list of all models with information
   * bug fixes
-  
-  
+
+
 ## Version 1.0.0
 
   * Initial version on CRAN
   
+
